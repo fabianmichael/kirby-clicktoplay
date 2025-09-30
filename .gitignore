@@ -1,0 +1,7 @@
+.DS_Store
+Thumbs.db
+
+/vendor/
+/node_modules/
+/panel/node_modules/
+/site
