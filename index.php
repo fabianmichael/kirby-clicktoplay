@@ -7,7 +7,7 @@ use Kirby\Cms\App as Kirby;
 Kirby::plugin('fabianmichael/clicktoplay', [
     'options' => [
         'cache' => true,
-        'cacheLifetime' => 60 * 24,
+        'cacheLifetime' => 0, // infinite cache lifetime
     ],
 
     'snippets' => [

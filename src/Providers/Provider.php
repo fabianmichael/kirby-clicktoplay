@@ -87,7 +87,7 @@ abstract class Provider
 
 	public function oembedData(): ?array
 	{
-		$cache = kirby()->cache('FabianMichael.clicktoplay');
+		$cache = kirby()->cache('fabianmichael.clicktoplay');
 		$key = $this->cacheKey();
 		$data = $cache->get($key);
 
@@ -99,7 +99,7 @@ abstract class Provider
 					$data = json_decode($request->content(), true);
 
 					if ($data) {
-						$cache->set($key, $data, option('FabianMichael.clicktoplay.cacheLifetime', 60 * 24));
+						$cache->set($key, $data, option('fabianmichaelx.clicktoplay.cacheLifetime', 0));
 					}
 				}
 			} catch (Exception $e) {
